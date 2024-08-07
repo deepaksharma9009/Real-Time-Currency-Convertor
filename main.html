@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Convertor</title>
+  <link  rel="stylesheet" href = "style.css">
+</head>
+<body>
+  <div class="heading-container">
+    <h1 id="heading-h1">
+      Currency Convertor
+    </h1>
+    <h3 id = "heading-h3">
+      Check live foreign currency exchange rates</h3>
+  </div>
+  <div class="main-container">
+    <form>
+      <div class = "form-container">
+        <div class="amount-container">
+          <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Amount</p>
+          <input class="form-control form-control-lg" type="text" placeholder="Enter Amount">
+        </div>
+        <div class="from-container">
+          <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">From</p>
+          <div class="select-container">
+            <img src="https://flagsapi.com/IN/flat/64.png" />
+            <select name = "from"></select>
+          </div>
+        </div>
+        <div class="to-container">
+          <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">To</p>
+          <div class="select-container">
+            <img src="https://flagsapi.com/US/flat/64.png" />
+            <select name = "to"></select>
+          </div>
+        </div>
+      </div>
+      <div class="buttton-container">
+        <button  id = "exchange-button" type="button" class="btn btn-dark">Get Exchange</button>
+      </div>
+    </form>
+    <form action="">
+      <div class="result-container">
+        <div class = "amount-entered">
+          <p id = "amount"></p>
+        </div>
+        <div class = "reselt-get">
+          <p id = "result"></p>
+        </div> 
+        <div class = "one-currency-price">
+          <p id = "single-currency"></p>
+          <P id = "single-currency-value"></P>
+        </div>
+        <div class = "one-currency-price">
+          <p id = "single-currency-reverse"></p>
+          <P id = "single-currency-value-reverse"></P>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src = "codes.js"></script>
+  <script src = "script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.convert-text-container {
+  display: flex;
+  justify-content: left;
+  font-size: 2rem;
+}
+.heading-container {
+  text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.main-container {
+  margin-left: 100px;
+  margin-right: 100px;
+  gap: 4rem;
+  flex: 500px 1200px;
+  font-size: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  flex-shrink: 200px;
+  flex-grow: 1000px;
+}
+.result-container {
+  font-size: 40px;
+}
+.buttton-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+button {
+  font-size: 2rem;
+  background-color: white;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  font-size: 40px;
+  margin-top: 150px;
+}
+select {
+  width: 150px;
+  font-size: 32px;
+  background-color: white;
+  border-color: white;
+}
+input {
+  height: 70px;
+  font-size: 1rem;
+}
+.select-container {
+  display: flex;
+      align-items: center;
+      gap: 10px; /* Adjust the space between the image and the select box */
+      padding: 10px; /* Add some padding to the container */
+      border: 1px solid #ddd; /* Add a border to the container */
+      border-radius: 5px; /* Round the corners */
+      background-color: #f9f9f9;
+      
+}
+.amount-entered {
+  display: flex;
+  justify-content: left;
+}
+.reselt-get {
+  display: flex;
+  justify-content: left;
+}
+.one-currency-price {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+}
+.hide {
+  display: none;
+}
+.form-control {
+  height: 85px;
+}
+.btn-dark {
+  height: 85px;
+  width: 300px;
+  font-size: 35px;
+  margin-bottom: 100px;
+}
+.result-container {
+  position: absolute;
+  left: 35%;
+}
