@@ -60,13 +60,13 @@ const fetchData = async (amount) => {
     let data = await response.json();
     let rate = data.data[fromCurr.value];
 
-    let finalAmt = amount * rate;
+    let finalAmt = amount / rate;
 
     // Update UI elements
     amountMsg.innerText = `${amount} ${fromCurr.value} =`;
     finalOpt.innerText = `${finalAmt} ${toCurr.value}`;
-    oneCurr.innerText = `1 ${fromCurr.value} =`;
-    oneCurrValue.innerText = ` ${rate} ${toCurr.value}`;
+    oneCurr.innerText = `1 ${toCurr.value} =`;
+    oneCurrValue.innerText = ` ${rate} ${fromCurr.value}`;
   } catch (error) {
     console.error("Error fetching data:", error);
   }
@@ -80,8 +80,8 @@ const fetchDataReverse = async () => {
     let rate = data.data[toCurr.value];
 
     // Update UI elements
-    oneCurrReverse.innerText = `1 ${toCurr.value} =`;
-    oneCurrValueReverse.innerText = ` ${rate} ${fromCurr.value}`;
+    oneCurrReverse.innerText = `1 ${fromCurr.value} =`;
+    oneCurrValueReverse.innerText = ` ${rate} ${toCurr.value}`;
   } catch (error) {
     console.error("Error fetching data:", error);
   }
